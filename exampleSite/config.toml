@@ -1,0 +1,145 @@
+baseurl = "https://example.com/"
+languageCode = "en-us"
+title = "AlphaCast"
+theme = "alphacast"
+googleAnalytics = ""
+themesdir = "../.."
+paginate = "9"
+buildFuture = true
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[permalinks]
+	# page = "/:filename/"
+	about = "/:filename/"
+	episode = "/:filename/"
+
+
+# The theme supports menus with up to one submenu per menu item
+# The menu name must be "Main"
+# The menus are sorted based upon their identifier
+[[Menu.Main]]
+    name = "About"
+    identifier = "about"
+    url = "/about"
+
+[[Menu.Main]]
+    name = "Contact"
+    identifier = "contact"
+    url = "/contact"
+
+[[Menu.Main]]
+    name = "Hosts"
+    identifier = "hosts"
+    url = "/host"
+
+[[Menu.Main]]
+    name = "Guests"
+    identifier = "guests"
+    url = "/guest"
+
+[[Menu.Main]]
+    name = "Upcoming Episodes"
+    identifier = "upcoming"
+    url = "/upcoming"
+
+
+[[Menu.Main]]
+    name = "Podcasts"
+    identifier = "podcasts"
+    url = "/books"
+    parent = "resources"
+
+[params]
+mainSections = ["episode"]
+episode_number_style  = "brackets"
+episode_number_prefix = "CWC"
+site_theme = "grey"
+# site_layout = "grid"
+site_layout = "row"
+show_next_upcoming = "true"
+enable_jumbo = "true"
+# enable_jumbo = "false"
+# truncate = "100"
+# about_logo = "/img/alphacast.png"
+copyright_notice = "Copyright 2021 [therandomsecurityguy](https://randomsecurity.dev)"
+itunes_subscribe = "https://podcasts.apple.com/us/podcast/<podcast>/id773888088?ign-mpt=uo%3D4&mt=2"
+android_subscribe = "http://subscribeonandroid.com/feeds.podtrac.com/VGAulpN7MY1U"
+spotify_subscribe = "https://open.spotify.com/show/..."
+google_play_subscribe = "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuYXJyZXN0ZWRkZXZvcHMuY29tL2VwaXNvZGUvaW5kZXgueG1s"
+stitcher_subscribe = "http://www.stitcher.com/podcast/<podcast>-2/<podcast>"
+# rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
+description = "The AlphaCast is the best podcast you've ever seen. You will learn everything you ever needed to know about [podcasting](https://en.wikipedia.org/wiki/Podcast) from the most inspiring experts to ever show up on the whole internet."
+media_prefix = "https://"
+disqusShortname = ""
+  [params.feed]
+    copyright = "Copyright 2021 Name" #do not use markdown in this field; it is used in the feed
+    itunes_subtitle = "The best podcast ever" #no markdown or HTML
+    itunes_author = "Name" #no markdown or HTML
+    itunes_summary = "The AlphaCast is the best podcast you've ever seen. You will learn everything you ever needed to know about podcasting from the most inspiring experts to ever show up on the whole internet." # Limited to 4000 characters or less, plain text, no HTML
+    itunes_owner_name = "Name"
+    itunes_owner_email = "email@gmail.com" #contains the e-mail address that will be used to contact the owner of the Podcast for communication specifically about their Podcast on Apple Podcasts. It will not be publicly displayed on Apple Podcasts.
+    itunes_image = "https://www.example.com/img/podcast-logo.png" #fqdn to the image art for your podcast
+    itunes_top_category = "Technology"
+    itunes_first_sub_category = "Software How-To"
+    itunes_second_sub_category = "Tech News"
+    language = "en-us"
+
+  [params.realfavicongenerator] # https://realfavicongenerator.net/
+    mask_icon_color="#5bbad5"
+    msapplication_tilecolor="#2b5797"
+    theme_color="#ffffff"
+
+  [params.podlove] # https://subscribe-button.podlove.org
+    subscribe_title = ""              # fallback: site title from above
+    subscribe_subtitle = ""           # fallback: ""
+    subscribe_description = ""        # fallback: ""
+    subscribe_cover = "img/default.jpg"  # fallback: ""
+    subscribe_color = "#585e6c"       # fallback: ""
+    subscribe_size = "medium"         # options: small, medium, big
+    subscribe_format = "rectangle"    # options: rectangle, square, cover
+    subscribe_style = "filled"        # options: filled, outline, frameless
+    subscribe_language = "en"         # options: nl (dutch), en (english), eo (esperanto), de (german), fi (finnish), fr (french), ja (french)
+    subscribe_feed_type = "audio"     # options: audio, video
+    subscribe_feed_format = "mp3"     # options: mp3, aac, ogg, opus
+
+  [params.social]
+    github = "example"
+    gitlab = "example-name"
+    facebook = "example-name"
+    facebook_admin = ["500557137","1234"] # This needs to be one or more page admins to get domain insights
+    twitter = "example"
+    twitter_domain = "example.com" # This domain shows in twitter cards as "View on `twitter_domain`"
+    googleplus = "example-name"
+    pinterest = "example-name"
+    instagram = "example-name"
+    youtube = "example"
+    linkedin = "example-name"
+    twitch = "example-name"
+
+  [params.authors]
+    [params.authors.Matt]
+      name	= "Name"
+      thumbnail = "img/default.jpg"
+      bio = ""
+      [params.authors.author1.social]
+        github = "example-name"
+        facebook = "matt.stratton"
+        twitter = "example-name"
+        linkedin = "example-name"
+        homepage = "https://www.example-name.io"
+        pinterest = "example-name"
+        instagram = "instagram"
+        youtube = "example-name"
+        twitch = "example-name"
+
+    [params.links]
+      [params.links.first]
+        name = "First"
+        url = "https://www.example.com"
+      [params.links.second]
+        name = "Second"
+        url = "https://example2.com"
