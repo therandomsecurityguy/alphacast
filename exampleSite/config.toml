@@ -86,6 +86,7 @@ disqusShortname = ""
     itunes_top_category = "Technology"
     itunes_first_sub_category = "Software How-To"
     itunes_second_sub_category = "Tech News"
+    explicit = "no" # yes or no
     language = "en-us"
 
   [params.realfavicongenerator] # https://realfavicongenerator.net/
